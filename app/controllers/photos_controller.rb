@@ -5,6 +5,7 @@ class PhotosController < ApplicationController
   end
 
   def show
+
   end
 
   def new
@@ -38,7 +39,7 @@ class PhotosController < ApplicationController
 
   private
   def photo_params
-    params.require(:photo).permit(:title, :description)
+    params.require(:photo).permit(:title, :description, :image)
   end
 
   def find_photo

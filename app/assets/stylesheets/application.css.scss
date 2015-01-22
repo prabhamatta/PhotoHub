@@ -16,3 +16,14 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.navbar{
+  font: normal 16px Georgia, Times, serif;
+}
+.navbar-brand a{
+  color: darkred;
+  cursor: auto;
+  font: normal 24px Georgia, Times, serif;
+  text-decoration: none;
+}

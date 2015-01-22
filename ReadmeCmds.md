@@ -22,4 +22,14 @@ rake db:migrate
 ```
 
 - fix db connection error in rails c  --> config/applicaton.rb
-- 
+- add styling (first change assest/js, css files; then haml files)
+
+- add paperclip gem
+- install image magick
+- attach image to photo in photo.rb model
+-
+```
+rails g paperclip photo image
+```
+- edit controller permitted phtoto_params to include image
+- edit show.html.haml to show image tag
