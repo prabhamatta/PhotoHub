@@ -10,7 +10,7 @@ gem 'haml', '~> 4.0.6'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'simple_form', '~> 3.1.0'
 ```
--  
+ 
 ```
 bundle install
  ```
@@ -27,6 +27,7 @@ bundle install
  ```
 
 CRUD for Photo
+-
 - create basic views for photos - index, edit, new for Photo
 - start with 'new' and 'create' in Photo controller
 - create form partial
@@ -40,6 +41,7 @@ rails g simple_form:install --bootstrap
 - edit, show, delete and update changes in views
 
 User functionality
+-
 - add devise gem to Gemfile
 ```
 rails g devise install
@@ -53,7 +55,9 @@ bundle exec rake db:migrate
 ```
 - registration and session features
 - flash mesgs
+
 User and Photos association
+-
  - in models (has_many, belongs_to)
 
 ```
