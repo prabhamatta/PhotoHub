@@ -66,14 +66,18 @@ rake db:migrate
 ```
 - fix db connection error in rails c  --> config/applicaton.rb
 - add styling (change assest/js, css, haml files)
+
+Upload photos functionality
+-
 - add paperclip gem
 - install image magick
-- attach image to photo in photo.rb model
+- to attach image to photo, add has_attached_file and validates_attachment_content_type in Photo model
 ```
 rails g paperclip photo image
 ```
 - edit controller permitted phtoto_params to include image
-- edit show.html.haml to show image tag
+- change show,edit and index haml to show image tag
 
 Make app responsive
  -
+ - 
