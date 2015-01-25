@@ -1,3 +1,10 @@
-- @photos.each do |photo|
-  = link_to (image_tag photo.image.url(:medium)), photo
-  %h2= link_to photo.title, photo
+
+#photos.transitions-enabled.infinite-scroll.clearfix
+  - @photos.each do |photo|
+    .box.panel.panel-default
+      = link_to (image_tag photo.image.url(:medium)), photo
+      .panel-body
+      %h2= link_to photo.title, photo
+      %p.user
+      Submitted by
+      = photo.user.email

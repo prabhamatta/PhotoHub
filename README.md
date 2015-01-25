@@ -1,5 +1,5 @@
 # PhotoHub
-Hub for Fotos
+Hub for Photos
 
 ## Features
 
@@ -15,6 +15,7 @@ Hub for Fotos
   gem 'simple_form', '~> 3.1.0'
   gem 'devise', '~> 3.4.1'
   gem 'paperclip', '~> 4.2.1'
+  gem 'masonry-rails', '~> 0.2.4'
 ```
 
 ## Configuration & Database creation
@@ -29,4 +30,4 @@ rails s
 ```
 
 ## To learn how to build this app
-see line by line instructions at [ReadMe Cmds](./ReadmeCmds.md). 
+see line by line instructions [here](./ReadmeCmds.md). 

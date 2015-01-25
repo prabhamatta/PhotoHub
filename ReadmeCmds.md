@@ -1,5 +1,5 @@
-For those who want to build this cool app
------------------------------------------
+# Instructions to build this cool app
+-----------------------------------
 
 ```
 rails new PhotoHub
@@ -76,8 +76,12 @@ Upload photos functionality
 rails g paperclip photo image
 ```
 - edit controller permitted phtoto_params to include image
-- change show,edit and index haml to show image tag
+- change show,edit and index views to show image tag
 
-Make app responsive
+More styling with masonry gem
  -
- - 
+ ```
+ gem 'masonry-rails', '~> 0.2.4'
+ ```
+- add in application.js, application.css
+- changes to index, edit, show views
