@@ -28,4 +28,5 @@ bundle exec rake db:migrate
 rails s
 ```
 
-# To learn how to build this app, see line-by-line instructions at [ReadMe Cmds](./ReadmeCmds.md). 
+## To learn how to build this app
+see line by line instructions at [ReadMe Cmds](./ReadmeCmds.md). 
