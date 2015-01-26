@@ -79,9 +79,20 @@ rails g paperclip photo image
 - change show,edit and index views to show image tag
 
 More styling with masonry gem
- -
+-
  ```
  gem 'masonry-rails', '~> 0.2.4'
  ```
 - add in application.js, application.css
 - changes to index, edit, show views
+
+Voting functionality
+-
+```
+gem 'acts_as_votable', '~> 0.10.0'
+```
+```
+rails g acts_as_votable:migration
+rake db:migrate
+```
+- votability in Photo model

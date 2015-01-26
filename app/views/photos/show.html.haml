@@ -6,9 +6,6 @@
       .panel-body
         %h1= @photo.title
         %p.description= @photo.description
-        %p
-          Submitted by
-          = @photo.user.email
       .panel-footer
         .row
           .col-md-6
@@ -17,5 +14,8 @@
               = @photo.user.email
           .col-md-6
             .btn-group.pull-right
+              = link_to like_photo_path(@photo), method: :put, class: "btn btn-default" do
+                %span.glyphicon.glyphicon-heart
+                = @photo.get_upvotes.size
               = link_to "Edit", edit_photo_path, class: "btn btn-default"
               = link_to "Delete", photo_path, method: :delete, data: {confirm:  "Are you sure?"},  class: "btn btn-default"
