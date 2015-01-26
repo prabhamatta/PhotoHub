@@ -86,7 +86,7 @@ More styling with masonry gem
 - add in application.js, application.css
 - changes to index, edit, show views
 
-Voting functionality
+Photo voting functionality
 -
 ```
 gem 'acts_as_votable', '~> 0.10.0'
@@ -95,4 +95,13 @@ gem 'acts_as_votable', '~> 0.10.0'
 rails g acts_as_votable:migration
 rake db:migrate
 ```
-- votability in Photo model
+- add acts_as_votable in Photo model
+- modify show view for upvoting
+
+More Styling to Photo edit and User pages
+-
+- modify devise registration and session views
+- modify photo edit view
+
+
+
