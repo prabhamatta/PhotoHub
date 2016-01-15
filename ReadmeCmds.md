@@ -104,4 +104,14 @@ More Styling to Photo edit and User pages
 - modify photo edit view
 
 
+Convert erb into haml files
+-
+- add `gem "erb2haml", :group => :development` to Gemfile
+``` 
+bundle install
+bundle exec rake haml:replace_erbs
+```
+Restart the server `rails s`
+
+
 
